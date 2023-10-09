@@ -1,0 +1,66 @@
+
+@font-face {
+  src: url("/assets/fonts/Onest-Regular.ttf") format("truetype");
+  font-family: "Onest-Regular";
+}
+@font-face {
+  src: url("/assets/fonts/Onest-Bold.ttf") format("truetype");
+  font-family: "Onest-Bold";
+}
+@font-face {
+  src: url("/assets/fonts/Onest-ExtraBold.ttf") format("truetype");
+  font-family: "Onest-ExtraBold";
+}
+@font-face {
+  src: url("/assets/fonts/Onest-ExtraLight.ttf") format("truetype");
+  font-family: "Onest-ExtraLight";
+}
+@font-face {
+  src: url("/assets/fonts/Onest-Light.ttf") format("truetype");
+  font-family: "Onest-Light";
+}
+@font-face {
+  src: url("/assets/fonts/Onest-Medium.ttf") format("truetype");
+  font-family: "Onest-Medium";
+}
+@font-face {
+  src: url("/assets/fonts/Onest-SemiBold.ttf") format("truetype");
+  font-family: "Onest-SemiBold";
+}
+@font-face {
+  src: url("/assets/fonts/Onest-Thin.ttf") format("truetype");
+  font-family: "Onest-Thin";
+}
+
+.font-family-regular {
+  font-family: "Onest-Regular", sans-serif;
+}
+.font-family-bold {
+  font-family: "Onest-Bold", sans-serif;
+}
+.font-family-extra-bold {
+  font-family: "Onest-ExtraBold", sans-serif;
+}
+.font-family-extra-light {
+  font-family: "Onest-ExtraLight", sans-serif;
+}
+.font-family-light {
+  font-family: "Onest-Light", sans-serif;
+}
+.font-family-medium{
+  font-family: "Onest-Medium", sans-serif;
+}
+.font-family-semi-bold {
+  font-family: "Onest-SemiBold", sans-serif;
+}
+.font-family-thin {
+  font-family: "Onest-Thin", sans-serif;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, span{
+  font-family: "Onest-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
