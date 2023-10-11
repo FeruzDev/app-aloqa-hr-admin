@@ -91,8 +91,11 @@ const StatistikaDetail = () => {
                                         <TableCell className="twt" align="right">{row.calories}</TableCell>
                                         <TableCell className="twt" align="right">{row.calories}</TableCell>
                                         <TableCell className="twt" align="right">
-                                            <button className="p-0 border-0 bg-transparent"><img src="/icon/verdot.svg"
-                                                                                                 alt=""/></button>
+                                            <div className="day-content">
+                                                <div className="dots-light">
+                                                    <div className="green-light dots-light-big" />
+                                                </div>
+                                            </div>
                                         </TableCell>
                                     </TableRow>
                                 ))}

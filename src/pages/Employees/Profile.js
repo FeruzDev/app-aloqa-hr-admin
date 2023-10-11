@@ -93,7 +93,13 @@ const Profile = () => {
                                         </TableCell>
                                         <TableCell  className="twt"  align="right">{row.calories}</TableCell>
                                         <TableCell  className="twt"  align="right">{row.calories}</TableCell>
-                                        <TableCell  className="twt" align="right"><button className="p-0 border-0 bg-transparent"><img src="/icon/verdot.svg" alt=""/></button></TableCell>
+                                        <TableCell  className="twt" align="right">
+                                            <div className="day-content">
+                                                <div className="dots-light">
+                                                    234 <div className="green-light dots-light-small ml-8"></div>
+                                                </div>
+                                            </div>
+                                        </TableCell>
                                     </TableRow>
                                 ))}
                             </TableBody>

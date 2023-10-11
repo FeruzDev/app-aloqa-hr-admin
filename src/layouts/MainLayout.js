@@ -10,6 +10,7 @@ import ProfileEdit from "../pages/Employees/ProfileEdit";
 import ProfileCreate from "../pages/Employees/ProfileCreate";
 import Statistika from "../pages/Statistika";
 import StatistikaDetail from "../pages/Statistika/StatistikaDetail";
+import Audit from "../pages/Audit";
 
 const MainLayout = () => {
     return (
@@ -29,6 +30,7 @@ const MainLayout = () => {
                     <Route path="/home/employees/profile/create" exact component={ProfileCreate} />
                     <Route path="/home/statistika" exact component={Statistika} />
                     <Route path="/home/statistika/detail" exact component={StatistikaDetail} />
+                    <Route path="/home/audit" exact component={Audit} />
                 </Switch>
             </div>
 

@@ -117,14 +117,8 @@ const Statistika = () => {
                         </div>
                     </div>
                     <div className="day-content">
-                        <div className="dots-light">
-                            234 <div className="green-light ml-8"></div>
-                        </div>
-                        <div className="dots-light">
-                            234 <div className="orange-light ml-8"></div>
-                        </div>
-                        <div className="dots-light">
-                            234 <div className="red-light ml-8"></div>
+                        <div className="rest-title">
+                            Oтдых
                         </div>
                     </div>
                 </div>

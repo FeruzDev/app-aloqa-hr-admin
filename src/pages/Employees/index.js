@@ -27,7 +27,7 @@ const Employees = () => {
     return (
         <div className="employees-pair">
             <div className="employees-header">
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between align-items-center">
                     <div className="left-head">
                         <h6>Cотрудники <div>5</div></h6>
                         <p>Управление сотрудниками</p>
@@ -41,7 +41,6 @@ const Employees = () => {
                 </div>
             </div>
             <SearchTop />
-
             <div className="emp-table">
                 <TableContainer component={Paper}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
