@@ -5,6 +5,7 @@ import FormControl from "@mui/material/FormControl";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
+import {Select} from "antd";
 
 const ProfileCreate = () => {
     function createData(name, calories, fat, carbs, protein) {
@@ -42,25 +43,25 @@ const ProfileCreate = () => {
                             <div className="row">
                                 <div className="col-md-6">
                                     <div className="inputs-box">
-                                        <label >Имя и фамилия </label>
+                                        <label  className="font-family-medium">Имя и фамилия </label>
                                         <input type="text" />
                                     </div>
                                     <div className="inputs-box">
-                                        <label >Логин / Номер телефона </label>
+                                        <label  className="font-family-medium">Логин / Номер телефона </label>
                                         <input type="text"  />
                                     </div>
                                     <div className="inputs-box">
-                                        <label >Дата рождения </label>
+                                        <label  className="font-family-medium">Дата рождения </label>
                                         <input type="date" />
                                     </div>
                                     <div className="inputs-box">
-                                        <label >Возраст </label>
+                                        <label  className="font-family-medium">Возраст </label>
                                         <input type="text"  />
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     <div className="inputs-box for-select">
-                                        <label >Пол </label>
+                                        <label  className="font-family-medium">Пол </label>
                                         <FormControl>
                                             <RadioGroup
                                                 row
@@ -73,7 +74,7 @@ const ProfileCreate = () => {
                                         </FormControl>
                                     </div>
                                     <div className="inputs-box">
-                                        <label >Филиал <button className="font-family-medium">Добавить новое</button></label>
+                                        <label  className="font-family-medium">Филиал <button className="font-family-medium">Добавить новое</button></label>
                                            <Select
                                         className="w-100" 
                                         options={[
@@ -85,7 +86,7 @@ const ProfileCreate = () => {
                                     />
                                     </div>
                                     <div className="inputs-box">
-                                        <label >Отдел <button className="font-family-medium">Добавить новое</button></label>
+                                        <label  className="font-family-medium">Отдел <button className="font-family-medium">Добавить новое</button></label>
                                            <Select
                                         className="w-100" 
                                         options={[
@@ -97,7 +98,7 @@ const ProfileCreate = () => {
                                     />
                                     </div>
                                     <div className="inputs-box">
-                                        <label >Должность <button className="font-family-medium">Добавить новое</button></label>
+                                        <label  className="font-family-medium">Должность <button className="font-family-medium">Добавить новое</button></label>
                                            <Select
                                         className="w-100" 
                                         options={[
@@ -109,7 +110,7 @@ const ProfileCreate = () => {
                                     />
                                     </div>
                                     <div className="inputs-box">
-                                        <label >Режим <button className="font-family-medium">Добавить новое</button> </label>
+                                        <label  className="font-family-medium">Режим <button className="font-family-medium">Добавить новое</button> </label>
                                            <Select
                                         className="w-100" 
                                         options={[

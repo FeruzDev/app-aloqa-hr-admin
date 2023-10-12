@@ -35,6 +35,10 @@ const MainSideBar = () => {
                           <img src="/icon/Icon6.svg" alt=""/>
                           <span>Аудит</span>
                       </Link>
+                      <Link to="/home/logging" className="link-item-style">
+                          <img src="/icon/Icon6.svg" alt=""/>
+                          <span>Логирование</span>
+                      </Link>
                       <Link to="/home/users" className="link-item-style">
                           <img src="/icon/Icon7.svg" alt=""/>
                           <span>Пользователи</span>
@@ -43,19 +47,19 @@ const MainSideBar = () => {
                           <img src="/icon/Icon8.svg" alt=""/>
                           <span>Уведомления</span>
                       </Link>
-                      {/*<Link to="/home/home-page" className="link-item-style">*/}
-                      {/*    <img src="/icon/Icon9.svg" alt=""/>*/}
-                      {/*    <span>Филиалы</span>*/}
-                      {/*</Link>*/}
+                      <Link to="/home/branches" className="link-item-style">
+                          <img src="/icon/Icon9.svg" alt=""/>
+                          <span>Филиалы</span>
+                      </Link>
                       <Link to="/home/departments" className="link-item-style">
                           <img src="/icon/Icon10.svg" alt=""/>
                           <span>Отделы</span>
                       </Link>
-                      <Link to="/home/home-page" className="link-item-style">
+                      <Link to="/home/modes" className="link-item-style">
                           <img src="/icon/Icon11.svg" alt=""/>
                           <span>Режимы</span>
                       </Link>
-                      <Link to="/home/home-page" className="link-item-style">
+                      <Link to="/home/positions" className="link-item-style">
                           <img src="/icon/Icon12.svg" alt=""/>
                           <span>Должность</span>
                       </Link>

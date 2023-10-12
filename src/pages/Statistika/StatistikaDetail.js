@@ -64,7 +64,7 @@ const StatistikaDetail = () => {
                         </div>
                     </div>
                     <div className="search-item w-100">
-                        <label htmlFor="searchItem"><img src="/icon/Icon6.svg" alt="loupe"/></label>
+                        <label htmlFor="searchItem" className="font-family-medium"><img src="/icon/Icon6.svg" alt="loupe"/></label>
                         <input type="text" placeholder="Искать в админке" id="searchItem"/>
                     </div>
 

@@ -54,15 +54,15 @@ const SearchTop = () => {
                   <div className="d-flex">
                       <div className="left-fl-pair">
                           <div className="inputs-box">
-                              <label >Дата рождения </label>
+                              <label  className="font-family-medium">Дата рождения </label>
                               <input type="date" />
                           </div>
                           <div className="inputs-box">
-                              <label >Возраст </label>
+                              <label  className="font-family-medium">Возраст </label>
                               <input type="text"  />
                           </div>
                           <div className="inputs-box">
-                              <label >Пол </label>
+                              <label  className="font-family-medium">Пол </label>
                               <FormControl>
                                   <RadioGroup
                                       row
@@ -77,7 +77,7 @@ const SearchTop = () => {
                       </div>
                       <div className="left-fl-pair">
                           <div className="inputs-box">
-                              <label >Отдел </label>
+                              <label  className="font-family-medium">Отдел </label>
                               <Select
                                   className="w-100"
                                   options={[
@@ -89,7 +89,7 @@ const SearchTop = () => {
                               />
                           </div>
                           <div className="inputs-box">
-                              <label >Должность </label>
+                              <label  className="font-family-medium">Должность </label>
                               <Select
                                   className="w-100"
                                   options={[
@@ -101,7 +101,7 @@ const SearchTop = () => {
                               />
                           </div>
                           <div className="inputs-box">
-                              <label >Режим </label>
+                              <label  className="font-family-medium">Режим </label>
                               <Select
                                   className="w-100"
                                   options={[

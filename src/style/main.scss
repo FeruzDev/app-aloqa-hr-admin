@@ -106,7 +106,9 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
 .ml-24 {
   margin-left: 24px;
 }
-
+.my-red-canc{
+  background-color: #C53434 !important;
+}
 .main-login {
   min-height: 100vh;
   background: #FAFDFF;
@@ -879,12 +881,15 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       &:nth-child(1) {
         border-radius: 6px;
         background: #1D7C4D;
-        border: none;
-        border-color: #1D7C4D;
+        border: 1px solid #1D7C4D;
         box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
         color: #FFF;
-        padding: 8px 12px;
+        padding: 8px 10px;
         font-size: 14px;
+        letter-spacing: 0;
+        img{
+          margin-left: 4px;
+        }
       }
 
       &:nth-child(2) {
@@ -1141,6 +1146,17 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       .for-select {
         margin-bottom: 6px;
       }
+      .exit-btn{
+        border-top: 1px solid #E9ECEF;
+        margin-top: 48px;
+        padding-top: 24px;
+        button{
+          color: #C53434;
+          border: none;
+          background: transparent;
+          padding: 0;
+        }
+      }
     }
   }
 }
@@ -1179,7 +1195,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       border-radius: 6px;
       border: 1px solid var(--action-outline-normal, #CFD6DD);
       background: var(--background-neutral-on-subtle, #E9ECEF);
-      box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+      box-shadow: 0 1px 2px 0 rgba(27, 36, 44, 0.12);
       width: 44px;
       height: 40px;
       display: block;
@@ -1753,7 +1769,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
           background: #FFF;
           padding: 8px 16px;
           width: 240px;
-          margin-bottom: 24px;
+          margin-bottom: 16px;
 
           &:focus {
             outline: none;
@@ -1886,5 +1902,8 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
 
 }
 .css-dev-only-do-not-override-amq5gd{
-  height: 40px;
+  //height: 40px;
+  min-width: 60px;
+  min-height: 40px;
 }
+

@@ -94,11 +94,11 @@ const Reports = () => {
             <div className="rep-box">
                 <div className="control-in">
                     <div className="inputs-box-cal">
-                        <label >Дата </label>
+                        <label  className="font-family-medium">Дата </label>
                         <Calendar />
                     </div>
                     <div className="inputs-box">
-                        <label >Отдел </label>
+                        <label  className="font-family-medium">Отдел </label>
 
                         <Select
                             className="w-100"

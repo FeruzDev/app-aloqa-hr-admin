@@ -21,11 +21,11 @@ const AddUser = () => {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="inputs-box">
-                            <label>Имя и фамилия </label>
-                            <input type="text "/>
+                            <label  className="font-family-medium">Имя и фамилия </label>
+                            <input type="text" className="w-100"/>
                         </div>
                         <div className="inputs-box">
-                            <label>Отдел </label>
+                            <label  className="font-family-medium">Отдел </label>
                             <Select
                                 className="w-100"
                                 options={[
@@ -38,7 +38,7 @@ const AddUser = () => {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <label>Привилегии</label>
+                        <label  className="font-family-medium">Привилегии</label>
                         <FormGroup>
                             {/*<FormControlLabel control={<Checkbox defaultChecked />} label="Label" />*/}
                             <FormControlLabel   control={

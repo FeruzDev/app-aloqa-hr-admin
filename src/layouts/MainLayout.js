@@ -21,6 +21,17 @@ import NotificationAdd from "../pages/Notification/NotificationAdd";
 import Departments from "../pages/Departments";
 import DepartmentsEdit from "../pages/Departments/DepartmentsEdit";
 import DepartmentsAdd from "../pages/Departments/DepartmentsAdd";
+import Modes from "../pages/Modes";
+import ModesAdd from "../pages/Modes/ModesAdd";
+import ModesEdit from "../pages/Modes/ModesEdit";
+import PositionAdd from "../pages/Positions/PositionAdd";
+import Positions from "../pages/Positions";
+import PositionEdit from "../pages/Positions/PositionEdit";
+import Branches from "../pages/Branches";
+import BranchesAdd from "../pages/Branches/BranchesAdd";
+import BranchesEdit from "../pages/Branches/BranchesEdit";
+import JobTitle from "../pages/JobTitle";
+import Logging from "../pages/Logging";
 
 const MainLayout = () => {
     return (
@@ -51,6 +62,19 @@ const MainLayout = () => {
                     <Route path="/home/departments" exact component={Departments} />
                     <Route path="/home/departments/departments-edit" exact component={DepartmentsEdit} />
                     <Route path="/home/departments/departments-add" exact component={DepartmentsAdd} />
+                    <Route path="/home/modes" exact component={Modes} />
+                    <Route path="/home/modes/add" exact component={ModesAdd} />
+                    <Route path="/home/modes/edit" exact component={ModesEdit} />
+                    <Route path="/home/positions" exact component={Positions} />
+                    <Route path="/home/positions/add" exact component={PositionAdd} />
+                    <Route path="/home/positions/edit" exact component={PositionEdit} />
+                    <Route path="/home/branches" exact component={Branches} />
+                    <Route path="/home/branches/add" exact component={BranchesAdd} />
+                    <Route path="/home/branches/edit" exact component={BranchesEdit} />
+                    <Route path="/home/job-title" exact component={JobTitle} />
+                    <Route path="/home/logging" exact component={Logging} />
+
+
                 </Switch>
             </div>
 

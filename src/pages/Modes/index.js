@@ -8,9 +8,9 @@ import TableCell from "@mui/material/TableCell";
 import TableBody from "@mui/material/TableBody";
 import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";
-import SearchTop from "../../components/SearchTop";
+import {Button, Modal} from 'antd';
 
-const Notification = () => {
+const Modes = () => {
     const editNot = () => {
 
     }
@@ -32,27 +32,29 @@ const Notification = () => {
         createData('Gingerbread', 356, 16.0, 49, 3.9),
     ];
     return (
-        <div className="users notification">
+        <div className="users">
             <div className="employees-header">
                 <div className="d-flex justify-content-between align-items-center">
                     <div className="left-head">
-                        <h6>Уведомления</h6>
+                        <h6 className="font-family-medium">Режимы</h6>
                     </div>
                     <div className="right-head">
-                        <button className="add-btn font-family-medium"><img src="/icon/plus.svg"/> Отправить новый
+                        <button className="upload-btn font-family-medium ml-16 mr-16"><img
+                            src="/icon/upload.svg"/> Экспорт в Excel
+                        </button>
+                        <button className="add-btn font-family-medium"><img src="/icon/plus.svg"/> Добавить новое
                         </button>
                     </div>
                 </div>
             </div>
-            <SearchTop />
-            <div className="emp-table mt-0">
+            <div className="emp-table">
                 <TableContainer component={Paper}>
                     <Table sx={{minWidth: 650}} aria-label="simple table">
                         <TableHead>
                             <TableRow>
-                                <TableCell className="table-head">Сообщение</TableCell>
-                                <TableCell className="table-head" align="right">Отдел</TableCell>
-                                <TableCell className="table-head" align="right">Время</TableCell>
+                                <TableCell className="table-head">Название</TableCell>
+                                <TableCell className="table-head" >Рабочее время</TableCell>
+                                <TableCell className="table-head" >Рабочие дни</TableCell>
                                 <TableCell className="table-head" align="right">Действие</TableCell>
                             </TableRow>
                         </TableHead>
@@ -63,18 +65,19 @@ const Notification = () => {
                                     sx={{'&:last-child td, &:last-child th': {border: 0}}}
                                 >
                                     <TableCell component="th" scope="row">
-                                        <span className="t-name font-family-medium text-decoration-underline">Versions of the Lorem ipsum text have been used in typesetting at leas...</span>
+                                        <span className="t-name font-family-medium">Отдель 1</span>
                                     </TableCell>
-                                    <TableCell className="twt" align="right"><span
-                                        className="t-name font-family-medium">AUP, Кредитный отдел (12+)</span></TableCell>
-                                    <TableCell className="twt" align="right"><span className="font-family-medium">18:45, 11.12.2023</span></TableCell>
+                                    <TableCell className="twt" ><span className="font-family-medium">Филиал 1</span></TableCell>
+                                    <TableCell className="twt" ><span className="font-family-medium">Пн. Вт.</span></TableCell>
                                     <TableCell className="twt" align="right">
                                         <div className="con-btns-all">
-                                            <button className="t-delete-btn font-family-medium"
-                                                    onClick={deleteNot}>Удалить
-                                            </button>
-                                            <button className="t-edit-btn font-family-medium" onClick={editNot}>Изменить</button>
-                                            <button className="t-send-btn font-family-medium" onClick={sendNot}>Отправить снова</button>
+                                            <div className="con-btns-all">
+                                                <button className="t-delete-btn font-family-medium"
+                                                        onClick={deleteNot}>Удалить
+                                                </button>
+                                                <button className="t-edit-btn font-family-medium" onClick={editNot}>Изменить</button>
+                                                <button className="t-send-btn font-family-medium" onClick={sendNot}>Отправить снова</button>
+                                            </div>
                                         </div>
                                     </TableCell>
                                 </TableRow>
@@ -84,6 +87,7 @@ const Notification = () => {
                 </TableContainer>
 
             </div>
+
             <div className="pag-bottom">
                 <Stack spacing={2}>
                     <Pagination count={10} shape="rounded"/>
@@ -93,4 +97,4 @@ const Notification = () => {
     );
 };
 
-export default Notification;
+export default Modes;

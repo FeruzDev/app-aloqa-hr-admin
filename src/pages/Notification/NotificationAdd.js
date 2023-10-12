@@ -21,13 +21,13 @@ const NotificationEdit = () => {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="inputs-box h-100 pb-3">
-                            <label>Текст уведомления </label>
+                            <label  className="font-family-medium">Текст уведомления </label>
                             <textarea placeholder="Макс. 1200 символов"/>
 
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <label>Отдел</label>
+                        <label  className="font-family-medium">Отдел</label>
                         <FormGroup>
                             {/*<FormControlLabel control={<Checkbox defaultChecked />} label="Label" />*/}
                             <FormControlLabel   control={
@@ -72,7 +72,7 @@ const NotificationEdit = () => {
                     <div className="col-md-4 not-add-edit">
                         <h4 className="font-family-medium">Бухгалтерский учет</h4>
                         <div className="inputs-box">
-                            <label >Пол </label>
+                            <label  className="font-family-medium">Пол </label>
                             <Select
                                 className="w-100"
                                 options={[
@@ -84,7 +84,7 @@ const NotificationEdit = () => {
                             />
                         </div>
                         <div className="inputs-box">
-                            <label >Сотрудники </label>
+                            <label  className="font-family-medium">Сотрудники </label>
                             <Select
                                 className="w-100"
                                 options={[
@@ -96,7 +96,7 @@ const NotificationEdit = () => {
                             />
                         </div>
                         <div className="inputs-box">
-                            <label >Режим </label>
+                            <label  className="font-family-medium">Режим </label>
                             <Select
                                 className="w-100"
                                 options={[
@@ -108,7 +108,7 @@ const NotificationEdit = () => {
                             />
                         </div>
                         <div className="inputs-box">
-                            <label >Эффективность </label>
+                            <label  className="font-family-medium">Эффективность </label>
                             <Select
                                 className="w-100"
                                 options={[

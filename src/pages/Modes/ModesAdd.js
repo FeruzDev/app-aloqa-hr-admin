@@ -1,18 +1,22 @@
 import React from 'react';
 import {Select} from "antd";
+import { TimePicker } from 'antd';
+import dayjs from 'dayjs';
 
-const DepartmentsAdd = () => {
+const ModesAdd = () => {
     const handleChange = () => {
 
     }
+    const format = 'HH:mm';
+
     return (
         <div className="edit-user">
             <div className="progress-link">
                 <img src="/icon/Icon1.svg" alt="."/>
                 <img src="/icon/arrowleft.svg" alt="."/>
-                <span>Пользователи</span>
+                <span>Режимы</span>
                 <img src="/icon/arrowleft.svg" alt="."/>
-                <span>Добавить нового отдела</span>
+                <span>Добавить нового режима</span>
             </div>
             <h3 className="edit-user-title font-family-medium">
                 Добавить нового отдела
@@ -24,23 +28,29 @@ const DepartmentsAdd = () => {
                             <label  className="font-family-medium">Названия отдела </label>
                             <input type="text" placeholder="Напишите названия" className="w-100"/>
                         </div>
-                        <div className="inputs-box m-0">
-                            <label  className="font-family-medium">Филиал </label>
+                        <div className="inputs-box-clock w-100">
+                            <label  className="font-family-medium">Рабочее время</label>
+                            <div className="d-flex">
+                                <TimePicker className="w-100" defaultValue={dayjs('09:00', format)} format={format} />
+                                <TimePicker  className="w-100 ml-8" defaultValue={dayjs('18:00', format)} format={format} />
+                            </div>
+                        </div>
+                        <div className="inputs-box  mt-3">
+                            <label  className="font-family-medium">Рабочие дни</label>
                             <Select
                                 className="w-100"
                                 onChange={handleChange}
                                 options={[
-                                    { value: 'jack', label: 'Jack' },
+                                    { value: '2', label: '2' },
                                     { value: '1', label: '1' },
-                                    { value: 'Yiminghe', label: 'yiminghe' },
-                                    { value: 'disabled', label: 'Disabled', disabled: true },
                                 ]}
                             />
                         </div>
+
                     </div>
                 </div>
                 <div className="con-btn mt-4 w-auto">
-                    <button className="font-family-medium"><span>Сохранить изменения</span></button>
+                    <button className="font-family-medium"><span>Подтверждать</span></button>
                     <button className="font-family-medium ml-8  ">Отменить</button>
                 </div>
             </div>
@@ -49,4 +59,4 @@ const DepartmentsAdd = () => {
     );
 };
 
-export default DepartmentsAdd;
+export default ModesAdd;

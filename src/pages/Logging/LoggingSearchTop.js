@@ -9,7 +9,7 @@ import FormControl from "@mui/material/FormControl";
 import {FormLabel} from "@mui/material";
 import RadioGroup from "@mui/material/RadioGroup";
 import {Select} from "antd";
-const AuditSearchTop = () => {
+const LoggingSearchTop = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -94,4 +94,4 @@ const AuditSearchTop = () => {
     );
 };
 
-export default AuditSearchTop;
+export default LoggingSearchTop;

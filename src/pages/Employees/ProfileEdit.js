@@ -8,19 +8,6 @@ import Radio from "@mui/material/Radio";
 import {Select} from "antd";
 
 const ProfileEdit = () => {
-    function createData(name, calories, fat, carbs, protein) {
-        return { name, calories, fat, carbs, protein };
-    }
-
-    const rows = [
-        createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-        createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-        createData('Eclair', 262, 16.0, 24, 6.0),
-        createData('Cupcake', 305, 3.7, 67, 4.3),
-        createData('Gingerbread', 356, 16.0, 49, 3.9),
-    ];
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
 
     return (
         <div className="profile-edit">
@@ -44,25 +31,25 @@ const ProfileEdit = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="inputs-box">
-                                    <label >Имя и фамилия </label>
+                                    <label  className="font-family-medium">Имя и фамилия </label>
                                     <input type="text" />
                                 </div>
                                 <div className="inputs-box">
-                                    <label >Логин / Номер телефона </label>
+                                    <label  className="font-family-medium">Логин / Номер телефона </label>
                                     <input type="text"  />
                                 </div>
                                 <div className="inputs-box">
-                                    <label >Дата рождения </label>
+                                    <label  className="font-family-medium">Дата рождения </label>
                                     <input type="date" />
                                 </div>
                                 <div className="inputs-box">
-                                    <label >Возраст </label>
+                                    <label  className="font-family-medium">Возраст </label>
                                     <input type="text"  />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="inputs-box for-select">
-                                    <label >Пол </label>
+                                    <label  className="font-family-medium">Пол </label>
                                     <FormControl>
                                         <RadioGroup
                                             row
@@ -75,7 +62,7 @@ const ProfileEdit = () => {
                                     </FormControl>
                                 </div>
                                 <div className="inputs-box">
-                                    <label >Филиал <button className="font-family-medium">Добавить новое</button></label>
+                                    <label  className="font-family-medium">Филиал <button className="font-family-medium">Добавить новое</button></label>
                                     <Select
                                         className="w-100"
                                         options={[
@@ -87,7 +74,7 @@ const ProfileEdit = () => {
                                     />
                                 </div>
                                 <div className="inputs-box">
-                                    <label >Отдел <button className="font-family-medium">Добавить новое</button></label>
+                                    <label  className="font-family-medium">Отдел <button className="font-family-medium">Добавить новое</button></label>
                                     <Select
                                         className="w-100"
                                         options={[
@@ -99,7 +86,7 @@ const ProfileEdit = () => {
                                     />
                                 </div>
                                 <div className="inputs-box">
-                                    <label >Должность <button className="font-family-medium">Добавить новое</button></label>
+                                    <label  className="font-family-medium">Должность <button className="font-family-medium">Добавить новое</button></label>
                                     <Select
                                         className="w-100"
                                         options={[
@@ -111,7 +98,7 @@ const ProfileEdit = () => {
                                     />
                                 </div>
                                 <div className="inputs-box">
-                                    <label >Режим <button className="font-family-medium">Добавить новое</button> </label>
+                                    <label  className="font-family-medium">Режим <button className="font-family-medium">Добавить новое</button> </label>
                                     <Select
                                         className="w-100"
                                         options={[

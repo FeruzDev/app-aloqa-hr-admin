@@ -107,7 +107,7 @@ const Users = () => {
                        <Button key="submit" type="default" onClick={handleCancelDelete}>
                            Отменить
                        </Button>,
-                       <Button key="submit" type="primary" danger onClick={handleOkDelete}>
+                       <Button key="submit" type="primary"  className="my-red-canc"  onClick={handleOkDelete}>
                            Да, удалить
                        </Button>
                    ]}
