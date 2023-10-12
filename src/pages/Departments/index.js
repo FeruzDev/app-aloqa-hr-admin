@@ -9,17 +9,38 @@ import TableBody from "@mui/material/TableBody";
 import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";
 import {Button, Modal} from 'antd';
+import {useHistory} from "react-router-dom";
 
 const Departments = () => {
-    const editNot = () => {
-
+    let history = useHistory()
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen2, setIsModalOpen2] = useState(false);
+    const createPage = () => {
+        history.push("/home/departments/departments-add")
     }
-    const deleteNot = () => {
-
+    const editPage = () => {
+        history.push("/home/departments/departments-edit")
     }
-    const sendNot = () => {
 
-    }
+
+    const showModalDelete = () => {
+        setIsModalOpen(true);
+    };
+    const showModalBlock = () => {
+        setIsModalOpen2(true);
+    };
+    const handleOkDelete = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancelDelete = () => {
+        setIsModalOpen(false);
+    };
+    const handleOkBlock = () => {
+        setIsModalOpen2(false);
+    };
+    const handleCancelBlock = () => {
+        setIsModalOpen2(false);
+    };
     function createData(name, calories, fat, carbs, protein) {
         return {name, calories, fat, carbs, protein};
     }
@@ -42,7 +63,7 @@ const Departments = () => {
                         <button className="upload-btn font-family-medium ml-16 mr-16"><img
                             src="/icon/upload.svg"/> Экспорт в Excel
                         </button>
-                        <button className="add-btn font-family-medium"><img src="/icon/plus.svg"/> Добавить новое
+                        <button className="add-btn font-family-medium" onClick={createPage}><img src="/icon/plus.svg"/> Добавить новое
                         </button>
                     </div>
                 </div>
@@ -71,10 +92,12 @@ const Departments = () => {
                                         <div className="con-btns-all">
                                             <div className="con-btns-all">
                                                 <button className="t-delete-btn font-family-medium"
-                                                        onClick={deleteNot}>Удалить
+                                                        onClick={showModalDelete}>Удалить
                                                 </button>
-                                                <button className="t-edit-btn font-family-medium" onClick={editNot}>Изменить</button>
-                                                <button className="t-send-btn font-family-medium" onClick={sendNot}>Отправить снова</button>
+                                                <button className="t-block-btn font-family-medium"
+                                                        onClick={showModalBlock}>Блокировать
+                                                </button>
+                                                <button className="t-edit-btn font-family-medium" onClick={editPage}>Изменить</button>
                                             </div>
                                         </div>
                                     </TableCell>
@@ -85,7 +108,34 @@ const Departments = () => {
                 </TableContainer>
 
             </div>
-
+            <Modal title="Внимание!"
+                   open={isModalOpen}
+                   onCancel={handleCancelDelete}
+                   footer={[
+                       <Button key="submit" type="default" onClick={handleCancelDelete}>
+                           Отменить
+                       </Button>,
+                       <Button key="submit" type="primary"  className="my-red-canc"  onClick={handleOkDelete}>
+                           Да, удалить
+                       </Button>
+                   ]}
+            >
+                <p className="pt-2 pb-2">Вы уверены, что удалите этого отделы? Это невозможно отменить</p>
+            </Modal>
+            <Modal title="Внимание!"
+                   open={isModalOpen2}
+                   onCancel={handleCancelBlock}
+                   footer={[
+                       <Button key="submit" type="default"   onClick={handleCancelBlock}>
+                           Отменить
+                       </Button>,
+                       <Button key="submit" type="primary"   onClick={handleOkBlock}>
+                           Да, подтверждаю
+                       </Button>
+                   ]}
+            >
+                <p className="pt-2 pb-2">Вы уверены, что заблокируете этого отделы?</p>
+            </Modal>
             <div className="pag-bottom">
                 <Stack spacing={2}>
                     <Pagination count={10} shape="rounded"/>

@@ -66,11 +66,11 @@ const MainSideBar = () => {
                   </div>
                   <div className="menu-list-bottom">
                       <div className="left-img-center">
-                          <div className="left-img">
+                          <Link to="/home/job-title" className="left-img">
                               <img src="/icon/Avatar.png" alt="Avatar"/>
-                          </div>
+                          </Link>
                           <div className="center-content">
-                              <h5 className="font-family-medium">Shoxrux R.</h5>
+                              <h5 className="font-family-medium"><Link to="/home/job-title">Shoxrux R.</Link></h5>
                               <h6> 99 877 34 22</h6>
                           </div>
                       </div>

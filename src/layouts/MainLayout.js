@@ -43,10 +43,10 @@ const MainLayout = () => {
             <div className="right-side">
                 <MainNavbar />
                 <Switch>
+                    <Route path="/" exact component={Home} />
                     <Route path="/home/home-page" exact component={Home} />
                     <Route path="/home/employees" exact component={Employees} />
                     <Route path="/home/employees/profile" exact component={Profile} />
-                    {/*<Route path="/home/employees/profile/view" exact component={ProfileEdit} />*/}
                     <Route path="/home/employees/profile/edit" exact component={ProfileEdit} />
                     <Route path="/home/employees/profile/create" exact component={ProfileCreate} />
                     <Route path="/home/statistika" exact component={Statistika} />
@@ -73,6 +73,7 @@ const MainLayout = () => {
                     <Route path="/home/branches/edit" exact component={BranchesEdit} />
                     <Route path="/home/job-title" exact component={JobTitle} />
                     <Route path="/home/logging" exact component={Logging} />
+
 
 
                 </Switch>

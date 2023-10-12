@@ -25,7 +25,7 @@ const ModesEdit = () => {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="inputs-box w-100">
-                            <label  className="font-family-medium">Названия отдела </label>
+                            <label  className="font-family-medium">Режимы   </label>
                             <input type="text" placeholder="Напишите названия" className="w-100"/>
                         </div>
                         <div className="inputs-box-clock w-100">

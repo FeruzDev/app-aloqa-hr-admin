@@ -9,20 +9,32 @@ import TableBody from "@mui/material/TableBody";
 import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";
 import SearchTop from "../../components/SearchTop";
+import {useHistory} from "react-router-dom";
+import {Button, Modal} from "antd";
 
 const Notification = () => {
-    const editNot = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    let history = useHistory()
 
+    const createPage = () => {
+        history.push("/home/notification/notification-add")
     }
-    const deleteNot = () => {
-
+    const editPage = () => {
+        history.push("/home/notification/notification-edit")
     }
-    const sendNot = () => {
-
-    }
+    const handleOkDelete = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancelDelete = () => {
+        setIsModalOpen(false);
+    };
+    const showModalDelete = () => {
+        setIsModalOpen(true);
+    };
     function createData(name, calories, fat, carbs, protein) {
         return {name, calories, fat, carbs, protein};
     }
+
 
     const rows = [
         createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
@@ -71,10 +83,10 @@ const Notification = () => {
                                     <TableCell className="twt" align="right">
                                         <div className="con-btns-all">
                                             <button className="t-delete-btn font-family-medium"
-                                                    onClick={deleteNot}>Удалить
+                                                    onClick={showModalDelete}>Удалить
                                             </button>
-                                            <button className="t-edit-btn font-family-medium" onClick={editNot}>Изменить</button>
-                                            <button className="t-send-btn font-family-medium" onClick={sendNot}>Отправить снова</button>
+                                            <button className="t-edit-btn font-family-medium" onClick={editPage}>Изменить</button>
+                                            <button className="t-send-btn font-family-medium" onClick={createPage}>Отправить снова</button>
                                         </div>
                                     </TableCell>
                                 </TableRow>
@@ -84,6 +96,20 @@ const Notification = () => {
                 </TableContainer>
 
             </div>
+            <Modal title="Внимание!"
+                   open={isModalOpen}
+                   onCancel={handleCancelDelete}
+                   footer={[
+                       <Button key="submit" type="default" onClick={handleCancelDelete}>
+                           Отменить
+                       </Button>,
+                       <Button key="submit" type="primary"  className="my-red-canc"  onClick={handleOkDelete}>
+                           Да, удалить
+                       </Button>
+                   ]}
+            >
+                <p className="pt-2 pb-2">Вы уверены, что удалите этого уведомления? Это невозможно отменить</p>
+            </Modal>
             <div className="pag-bottom">
                 <Stack spacing={2}>
                     <Pagination count={10} shape="rounded"/>

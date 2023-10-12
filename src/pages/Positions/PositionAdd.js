@@ -6,12 +6,12 @@ const PositionAdd = () => {
             <div className="progress-link">
                 <img src="/icon/Icon1.svg" alt="."/>
                 <img src="/icon/arrowleft.svg" alt="."/>
-                <span>Режимы</span>
+                <span>Должности</span>
                 <img src="/icon/arrowleft.svg" alt="."/>
                 <span>Добавить новую должность</span>
             </div>
             <h3 className="edit-user-title font-family-medium">
-                Добавить нового отдела
+                Добавить новую должность
             </h3>
             <div className="edit-user-box">
                 <div className="row">

@@ -2,12 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Fade from '@mui/material/Fade';
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Radio from "@mui/material/Radio";
-import FormControl from "@mui/material/FormControl";
-import {FormLabel} from "@mui/material";
-import RadioGroup from "@mui/material/RadioGroup";
+import Fade from '@mui/material/Fade'; 
 import {Select} from "antd";
 const AuditSearchTop = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -19,6 +14,9 @@ const AuditSearchTop = () => {
         setAnchorEl(null);
     };
 
+    const handleChange = () => {
+      
+    }
     return (
         <div className="search-top">
             <div className="d-flex align-items-center">
@@ -65,6 +63,9 @@ const AuditSearchTop = () => {
                                         { value: 'jack', label: 'Jack' },
                                         { value: '1', label: '1' },
                                         { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
                                         { value: 'disabled', label: 'Disabled', disabled: true },
                                     ]}
                                 />
@@ -73,9 +74,14 @@ const AuditSearchTop = () => {
                                 <label  className="font-family-medium">Действие </label>
                                 <Select
                                     className="w-100"
+                                    onChange={handleChange}
                                     options={[
                                         { value: 'jack', label: 'Jack' },
                                         { value: '1', label: '1' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
                                         { value: 'Yiminghe', label: 'yiminghe' },
                                         { value: 'disabled', label: 'Disabled', disabled: true },
                                     ]}

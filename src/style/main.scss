@@ -106,6 +106,10 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
 .ml-24 {
   margin-left: 24px;
 }
+.mt-20{
+  margin-top: 20px;
+}
+
 .my-red-canc{
   background-color: #C53434 !important;
 }
@@ -199,7 +203,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         padding-bottom: 10px;
         color: #FFFFFF;
         font-size: 16px;
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       }
     }
   }
@@ -221,10 +225,12 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
 }
 
 .main-side-bar {
+  position: fixed;
+  width: 240px;
+  height: 100%;
 
   .my-side-fix {
-    position: fixed;
-    width: 240px;
+    width: 100%;
     border-right: 1px solid #E9ECEF;
     height: 100%;
 
@@ -313,9 +319,13 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
             margin-left: 12px;
 
             h5 {
-              color: #272E35;
-              margin: 0;
-              font-size: 14px;
+
+              a{
+                text-decoration: none;
+                color: #272E35;
+                margin: 0;
+                font-size: 14px;
+              }
             }
 
             h6 {
@@ -452,16 +462,16 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         }
 
         &:nth-child(1) {
-          border-radius: 6px 0px 0px 6px;
+          border-radius: 6px 0  0  6px;
         }
 
         &:nth-child(2) {
-          border-radius: 0px 0px 0px 0px;
+          border-radius: 0  0  0  0 ;
 
         }
 
         &:nth-child(3) {
-          border-radius: 0px 6px 6px 0px;
+          border-radius: 0  6px 6px 0 ;
         }
       }
     }
@@ -559,6 +569,11 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
     }
   }
 
+  .my-shadow-shokh{
+    padding: 24px;
+    border-radius: 6px;
+    background: #FBFCFD;
+  }
   .home-right {
     border-radius: 6px;
     //background: #FBFCFD;
@@ -650,7 +665,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
           border-radius: 6px;
           border: 1px solid #CFD6DD;
           background: #FFF;
-          box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+          box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
           padding: 10px 16px 10px 12px;
           color: #4A545E;
           font-size: 14px;
@@ -767,12 +782,13 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
   padding-left: 16px;
   padding-right: 16px;
   color: #FFFFFF;
-  box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+  box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
 
   img {
     margin-right: 8px;
   }
 }
+
 
 .css-6hp17o-MuiList-root-MuiMenu-list {
   padding: 0 !important;
@@ -824,9 +840,9 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
   border-radius: 6px;
   border: 1px solid var(--border-neutral-subtle, #CFD6DD);
   background: var(--background-neutral-subtle, #F5F7F9);
-  box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+  box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
   flex-wrap: wrap;
-
+  z-index: 999999 !important;
   .left-fl-pair {
     width: 210px;
     margin-right: 24px;
@@ -882,7 +898,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         border-radius: 6px;
         background: #1D7C4D;
         border: 1px solid #1D7C4D;
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
         color: #FFF;
         padding: 8px 10px;
         font-size: 14px;
@@ -898,7 +914,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         background: #FFF;
         color: #4A545E;
         padding: 8px 16px;
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       }
     }
   }
@@ -1119,14 +1135,13 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       .con-btn {
         display: flex;
         margin-top: 40px;
-
         button {
           &:nth-child(1) {
             border-radius: 6px;
             background: #1D7C4D;
             border: none;
             border-color: #1D7C4D;
-            box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+            box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
             color: #FFF;
             padding: 8px 16px;
             font-size: 14px;
@@ -1138,7 +1153,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
             background: #FFF;
             color: #4A545E;
             padding: 8px 16px;
-            box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+            box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
           }
         }
       }
@@ -1212,7 +1227,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       border-radius: 6px;
       border: 1px solid var(--action-outline-normal, #CFD6DD);
       background: var(--background-neutral-on-subtle, #E9ECEF);
-      box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+      box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       width: 44px;
       height: 40px;
       display: block;
@@ -1228,14 +1243,14 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       button {
         display: flex;
         height: 40px;
-        //padding: 0px 16px;
+        //padding: 0  16px;
         width: 100%;
         justify-content: center;
         align-items: center;
         border-radius: 6px;
         border: 1px solid var(--action-outline-normal, #CFD6DD);
         background: var(--action-inverted-normal, #FFF);
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       }
     }
 
@@ -1255,7 +1270,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
 
     .day {
       width: 160px;
-      box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+      box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       border-radius: 6px;
       background-color: #FBFCFD;
       margin-bottom: 8px;
@@ -1263,7 +1278,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
 
       .day-header {
         display: flex;
-        border-radius: 6px 6px 0px 0px;
+        border-radius: 6px 6px 0  0 ;
         background: #F5F7F9;
 
         .month-day {
@@ -1512,7 +1527,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
   border-radius: 6px;
   border: 1px solid var(--border-neutral-subtle, #CFD6DD);
   background: var(--background-neutral-subtle, #F5F7F9);
-  box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+  box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
   flex-wrap: wrap;
 
   .left-fl-pair {
@@ -1571,7 +1586,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         background: #1D7C4D;
         border: none;
         border-color: #1D7C4D;
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
         color: #FFF;
         padding: 8px 16px;
         font-size: 14px;
@@ -1583,7 +1598,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         background: #FFF;
         color: #4A545E;
         padding: 8px 16px;
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       }
     }
   }
@@ -1796,6 +1811,13 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
           margin-bottom: 8px;
         }
       }
+      .inputs-box-clock{
+        label {
+          display: block;
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+      }
     }
   }
 
@@ -1809,7 +1831,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         background: #1D7C4D;
         border: none;
         border-color: #1D7C4D;
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
         color: #FFF;
         padding: 8px 16px;
         font-size: 14px;
@@ -1821,7 +1843,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
         background: #FFF;
         color: #4A545E;
         padding: 8px 16px;
-        box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+        box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       }
     }
   }
@@ -1869,8 +1891,8 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       border-radius: 6px;
       background: #1A99FF;
       border: none;
-      border-color: #1A99FF;
-      box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+      //border-color: #1A99FF;
+      box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       color: #FFF;
       padding: 8px 12px;
       font-size: 14px;
@@ -1880,9 +1902,9 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       border-radius: 6px;
       background: #1D7C4D;
       border: none;
-      border-color: #1D7C4D;
+      //border-color: #1D7C4D;
       margin-left: 8px;
-      box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+      box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
       color: #FFF;
       padding: 8px 12px;
       font-size: 14px;
@@ -1894,7 +1916,7 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
       background: #FFF;
       color: #4A545E;
       padding: 8px 16px;
-      box-shadow: 0px 1px 2px 0px rgba(27, 36, 44, 0.12);
+      box-shadow: 0  1px 2px 0  rgba(27, 36, 44, 0.12);
     }
   }
 }
@@ -1907,3 +1929,115 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
   min-height: 40px;
 }
 
+//Visitor camera
+.add-camera{
+  margin: 20px 14px;
+  padding: 16px 34px;
+  border-radius: 6px;
+  background: #FBFCFD;
+  .row{
+    .col-md-4{
+      .cam-title{
+        display: flex;
+        justify-content: space-between;
+        border-right: 1px solid #E0E0E0;
+        padding-right: 12px;
+        font-size: 18px;
+        color: #272e35;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      .office-box{
+        position: relative;
+        border-radius: 6px;
+        border: 1px solid #E6EBF3;
+        background: #FFF;
+        padding: 16px;
+        margin-top: 20px;
+        .rec-img{
+          padding-top: 20px;
+          img{
+            width: 100%;
+          }
+        }
+        .hor-dot{
+          padding: 0;
+          border: none;
+          background-color: transparent;
+          position: absolute;
+          right: 12px;
+          top: 16px;
+        }
+        .office-box-title{
+          color: #213453;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+        .office-box-title-child{
+          display: flex;
+          align-items: center;
+          color: #213453;
+          font-size: 12px;
+          font-style: normal;
+          margin-bottom: 14px;
+          font-weight: 600;
+        }
+        .office-box-item{
+          border-radius: 5px;
+          background: #F2F2F2;
+          padding: 10px 16px;
+          margin-top: 8px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          img{
+            margin-right: 12px;
+            margin-top: -2px;
+          }
+          .office-box-item-title{
+            color: #213453;
+            font-size: 12px;
+
+          }
+          .office-box-item-count-danger{
+            font-size: 12px;
+            font-weight: 700;
+            color: #EB5757;
+          }
+          .office-box-item-count{
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+.cam-add-modal{
+  padding-bottom: 20px;
+  padding-top: 5px;
+  .inputs-box {
+    margin-top: 16px;
+    input {
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #CFD6DD;
+      background: #FFF;
+      width: 100%;
+      padding: 8px 16px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #272E35;
+    }
+  }
+}

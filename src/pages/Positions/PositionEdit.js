@@ -6,7 +6,7 @@ const PositionEdit = () => {
             <div className="progress-link">
                 <img src="/icon/Icon1.svg" alt="."/>
                 <img src="/icon/arrowleft.svg" alt="."/>
-                <span>Режимы</span>
+                <span>Должности</span>
                 <img src="/icon/arrowleft.svg" alt="."/>
                 <span>Кассир</span>
             </div>

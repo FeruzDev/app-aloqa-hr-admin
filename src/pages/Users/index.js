@@ -9,10 +9,18 @@ import TableBody from "@mui/material/TableBody";
 import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";
 import {Button, Modal} from 'antd';
+import {useHistory} from "react-router-dom";
 
 const Users = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isModalOpen2, setIsModalOpen2] = useState(false);
+    let history = useHistory()
+    const createPage = () => {
+        history.push("/home/users/add-user")
+    }
+    const editPage = () => {
+        history.push("/home/users/edit")
+    }
     const showModalDelete = () => {
         setIsModalOpen(true);
     };
@@ -54,7 +62,7 @@ const Users = () => {
                         <button className="upload-btn font-family-medium ml-16 mr-16"><img
                             src="/icon/upload.svg"/> Экспорт в Excel
                         </button>
-                        <button className="add-btn font-family-medium"><img src="/icon/plus.svg"/> Добавить новое
+                        <button className="add-btn font-family-medium" onClick={createPage}><img src="/icon/plus.svg"/> Добавить новое
                         </button>
                     </div>
                 </div>
@@ -90,7 +98,7 @@ const Users = () => {
                                             <button className="t-block-btn font-family-medium"
                                                     onClick={showModalBlock}>Блокировать
                                             </button>
-                                            <button className="t-edit-btn font-family-medium">Изменить</button>
+                                            <button className="t-edit-btn font-family-medium" onClick={editPage}>Изменить</button>
                                         </div>
                                     </TableCell>
                                 </TableRow>
