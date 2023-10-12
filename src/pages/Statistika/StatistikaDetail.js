@@ -62,7 +62,6 @@ const StatistikaDetail = () => {
                                 Excel
                             </button>
                         </div>
-
                     </div>
                     <div className="search-item w-100">
                         <label htmlFor="searchItem"><img src="/icon/Icon6.svg" alt="loupe"/></label>

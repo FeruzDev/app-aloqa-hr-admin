@@ -35,11 +35,11 @@ const MainSideBar = () => {
                           <img src="/icon/Icon6.svg" alt=""/>
                           <span>Аудит</span>
                       </Link>
-                      <Link to="/home/home-page" className="link-item-style">
+                      <Link to="/home/users" className="link-item-style">
                           <img src="/icon/Icon7.svg" alt=""/>
                           <span>Пользователи</span>
                       </Link>
-                      <Link to="/home/home-page" className="link-item-style">
+                      <Link to="/home/notification" className="link-item-style">
                           <img src="/icon/Icon8.svg" alt=""/>
                           <span>Уведомления</span>
                       </Link>
@@ -47,7 +47,7 @@ const MainSideBar = () => {
                       {/*    <img src="/icon/Icon9.svg" alt=""/>*/}
                       {/*    <span>Филиалы</span>*/}
                       {/*</Link>*/}
-                      <Link to="/home/home-page" className="link-item-style">
+                      <Link to="/home/departments" className="link-item-style">
                           <img src="/icon/Icon10.svg" alt=""/>
                           <span>Отделы</span>
                       </Link>

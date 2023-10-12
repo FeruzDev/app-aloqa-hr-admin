@@ -12,6 +12,15 @@ import Statistika from "../pages/Statistika";
 import StatistikaDetail from "../pages/Statistika/StatistikaDetail";
 import Audit from "../pages/Audit";
 import Reports from "../pages/Reports";
+import Users from "../pages/Users";
+import EditUser from "../pages/Users/EditUser";
+import AddUser from "../pages/Users/AddUser";
+import Notification from "../pages/Notification";
+import NotificationEdit from "../pages/Notification/NotificationEdit";
+import NotificationAdd from "../pages/Notification/NotificationAdd";
+import Departments from "../pages/Departments";
+import DepartmentsEdit from "../pages/Departments/DepartmentsEdit";
+import DepartmentsAdd from "../pages/Departments/DepartmentsAdd";
 
 const MainLayout = () => {
     return (
@@ -33,6 +42,15 @@ const MainLayout = () => {
                     <Route path="/home/statistika/detail" exact component={StatistikaDetail} />
                     <Route path="/home/audit" exact component={Audit} />
                     <Route path="/home/report" exact component={Reports} />
+                    <Route path="/home/users" exact component={Users} />
+                    <Route path="/home/users/edit" exact component={EditUser} />
+                    <Route path="/home/users/add-user" exact component={AddUser} />
+                    <Route path="/home/notification" exact component={Notification} />
+                    <Route path="/home/notification/notification-edit" exact component={NotificationEdit} />
+                    <Route path="/home/notification/notification-add" exact component={NotificationAdd} />
+                    <Route path="/home/departments" exact component={Departments} />
+                    <Route path="/home/departments/departments-edit" exact component={DepartmentsEdit} />
+                    <Route path="/home/departments/departments-add" exact component={DepartmentsAdd} />
                 </Switch>
             </div>
 

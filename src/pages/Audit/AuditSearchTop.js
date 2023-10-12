@@ -8,6 +8,7 @@ import Radio from "@mui/material/Radio";
 import FormControl from "@mui/material/FormControl";
 import {FormLabel} from "@mui/material";
 import RadioGroup from "@mui/material/RadioGroup";
+import {Select} from "antd";
 const AuditSearchTop = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -58,19 +59,27 @@ const AuditSearchTop = () => {
                             </div>
                             <div className="inputs-box">
                                 <label >Роль </label>
-                                <select name="" id="">
-                                    <option value="1">123</option>
-                                    <option value="1">213</option>
-                                    <option value="1">123</option>
-                                </select>
+                                <Select
+                                    className="w-100"
+                                    options={[
+                                        { value: 'jack', label: 'Jack' },
+                                        { value: '1', label: '1' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'disabled', label: 'Disabled', disabled: true },
+                                    ]}
+                                />
                             </div>
                             <div className="inputs-box">
                                 <label >Действие </label>
-                                <select name="" id="">
-                                    <option value="1">123</option>
-                                    <option value="1">213</option>
-                                    <option value="1">123</option>
-                                </select>
+                                <Select
+                                    className="w-100"
+                                    options={[
+                                        { value: 'jack', label: 'Jack' },
+                                        { value: '1', label: '1' },
+                                        { value: 'Yiminghe', label: 'yiminghe' },
+                                        { value: 'disabled', label: 'Disabled', disabled: true },
+                                    ]}
+                                />
                             </div>
                         </div>
 

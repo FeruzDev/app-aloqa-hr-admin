@@ -74,35 +74,51 @@ const ProfileCreate = () => {
                                     </div>
                                     <div className="inputs-box">
                                         <label >Филиал <button className="font-family-medium">Добавить новое</button></label>
-                                        <select name="" id="">
-                                            <option value="1">123</option>
-                                            <option value="1">213</option>
-                                            <option value="1">123</option>
-                                        </select>
+                                           <Select
+                                        className="w-100" 
+                                        options={[
+                                            { value: 'jack', label: 'Jack' },
+                                            { value: '1', label: '1' },
+                                            { value: 'Yiminghe', label: 'yiminghe' },
+                                            { value: 'disabled', label: 'Disabled', disabled: true },
+                                        ]}
+                                    />
                                     </div>
                                     <div className="inputs-box">
                                         <label >Отдел <button className="font-family-medium">Добавить новое</button></label>
-                                        <select name="" id="">
-                                            <option value="1">123</option>
-                                            <option value="1">213</option>
-                                            <option value="1">123</option>
-                                        </select>
+                                           <Select
+                                        className="w-100" 
+                                        options={[
+                                            { value: 'jack', label: 'Jack' },
+                                            { value: '1', label: '1' },
+                                            { value: 'Yiminghe', label: 'yiminghe' },
+                                            { value: 'disabled', label: 'Disabled', disabled: true },
+                                        ]}
+                                    />
                                     </div>
                                     <div className="inputs-box">
                                         <label >Должность <button className="font-family-medium">Добавить новое</button></label>
-                                        <select name="" id="">
-                                            <option value="1">123</option>
-                                            <option value="1">213</option>
-                                            <option value="1">123</option>
-                                        </select>
+                                           <Select
+                                        className="w-100" 
+                                        options={[
+                                            { value: 'jack', label: 'Jack' },
+                                            { value: '1', label: '1' },
+                                            { value: 'Yiminghe', label: 'yiminghe' },
+                                            { value: 'disabled', label: 'Disabled', disabled: true },
+                                        ]}
+                                    />
                                     </div>
                                     <div className="inputs-box">
                                         <label >Режим <button className="font-family-medium">Добавить новое</button> </label>
-                                        <select name="" id="">
-                                            <option value="1">123</option>
-                                            <option value="1">213</option>
-                                            <option value="1">123</option>
-                                        </select>
+                                           <Select
+                                        className="w-100" 
+                                        options={[
+                                            { value: 'jack', label: 'Jack' },
+                                            { value: '1', label: '1' },
+                                            { value: 'Yiminghe', label: 'yiminghe' },
+                                            { value: 'disabled', label: 'Disabled', disabled: true },
+                                        ]}
+                                    />
                                     </div>
                                 </div>
                             </div>
