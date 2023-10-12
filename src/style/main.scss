@@ -701,10 +701,14 @@ a, h1, h2, h3, h4, h5, h6, p, span, button, label {
 
       .css-dev-only-do-not-override-amq5gd {
         width: 220px;
-        height: 40px;
+        height: 40px !important;
+      }
+      .css-amq5gd{
+        height: 40px !important;
       }
     }
   }
+
 
   .emp-table {
     .pl20 {

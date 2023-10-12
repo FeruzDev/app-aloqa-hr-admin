@@ -19,9 +19,6 @@ import Calendar from "./Calendar";
  const Home = () => {
     const [tabs, setTabs] = useState(1)
     const [age, setAge] = React.useState('');
-
-
-
     const handleChange = (event) => {
         setAge(event.target.value);
     };

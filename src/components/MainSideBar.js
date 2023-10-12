@@ -27,11 +27,11 @@ const MainSideBar = () => {
                       {/*    <img src="/icon/Icon4.svg" alt=""/>*/}
                       {/*    <span>Аналитика</span>*/}
                       {/*</Link>*/}
-                      <Link to="/home/home-page" className="link-item-style">
+                      <Link to="/home/report" className="link-item-style">
                           <img src="/icon/Icon5.svg" alt=""/>
                           <span> Отчеты</span>
                       </Link>
-                      <Link to="/home/home-page" className="link-item-style">
+                      <Link to="/home/audit" className="link-item-style">
                           <img src="/icon/Icon6.svg" alt=""/>
                           <span>Аудит</span>
                       </Link>

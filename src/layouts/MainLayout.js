@@ -11,6 +11,7 @@ import ProfileCreate from "../pages/Employees/ProfileCreate";
 import Statistika from "../pages/Statistika";
 import StatistikaDetail from "../pages/Statistika/StatistikaDetail";
 import Audit from "../pages/Audit";
+import Reports from "../pages/Reports";
 
 const MainLayout = () => {
     return (
@@ -31,6 +32,7 @@ const MainLayout = () => {
                     <Route path="/home/statistika" exact component={Statistika} />
                     <Route path="/home/statistika/detail" exact component={StatistikaDetail} />
                     <Route path="/home/audit" exact component={Audit} />
+                    <Route path="/home/report" exact component={Reports} />
                 </Switch>
             </div>
 

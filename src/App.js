@@ -1,4 +1,4 @@
-// import MainLayout from "./layouts/MainLayout";
+
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Login from "./pages/Login";
@@ -10,6 +10,8 @@ function App() {
       <>
 
           <Switch>
+              <Route path="/" component={MainLayout} />
+              {/*<Route path="/test" component={TestTest} />*/}
               <Route path="/home" component={MainLayout} />
               <Route path="/login" exact component={Login} />
           </Switch>
